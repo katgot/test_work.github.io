@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      type="image/vnd.microsoft.icon"
+      href="img/icons/favicon.ico"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Главная</title>
+  </head>
+  <body>
+    <main>
+      <div class="staff">
+        <section class="staff-section staff-section-left">
+          <div class="title">
+            <h3>Форма создания/редактирования сотрудника</h3>
+          </div>
+          <form
+            class="form-worker form-create-worker form-edit-worker"
+            name="worker"
+            method="post"
+            action="#"
+          >
+            <div class="worker__input">
+              <p>Фамилия Имя</p>
+              <input name="name" type="text" placeholder="Name Surname"/>
+            </div>
+            <div class="worker__input">
+              <p>Должность</p>
+              <input name="position" type="text" placeholder="Superhero" />
+            </div>
+            <div class="worker__input">
+              <p>Email</p>
+              <input name="email" type="email" placeholder="test@gmail.com" />
+            </div>
+            <div class="worker__input">
+              <p>Телефон</p>
+              <input name="telephone" type="text" placeholder="+380683055725" />
+            </div>
+            <button class="button worker__button-submite" type="button">
+              Сохранить
+            </button>
+            <button class="button worker__button-edit" type="button">
+              Редактировать
+            </button>
+          </form>
+        </section>
+        <section class="staff-section staff-section-right">
+          <div class="title title_red">
+            <h3>Список сотрудников</h3>
+          </div>
+          <div class="worker-list"></div>
+        </section>
+      </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.2/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
